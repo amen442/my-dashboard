@@ -1,0 +1,89 @@
+/* الصفحة الكاملة */
+.select-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+
+/* الصندوق الأبيض */
+.select-container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  max-width: 380px;
+  width: 100%;
+  color: #333;
+  transition: transform 0.3s ease;
+}
+
+.select-container:hover {
+  transform: translateY(-10px);
+}
+
+/* العنوان */
+.select-container h2 {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #4a148c;
+}
+
+/* أزرار الإختيار */
+.select-button {
+  margin: 15px 0;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(90deg, #7b2ff7, #f107a3);
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(123, 47, 247, 0.6);
+  transition: all 0.3s ease;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.select-button:hover {
+  background: linear-gradient(90deg, #f107a3, #7b2ff7);
+  box-shadow: 0 8px 20px rgba(241, 7, 163, 0.7);
+  transform: scale(1.05);
+}
+
+/* زر إنشاء حساب */
+.create-account-button {
+  margin-top: 25px;
+  background: none;
+  border: none;
+  color: #7b2ff7;
+  font-size: 15px;
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.create-account-button:hover {
+  color: #f107a3;
+}
+
+/* استجابة للشاشات الصغيرة */
+@media (max-width: 480px) {
+  .select-container {
+    padding: 30px 25px;
+    max-width: 320px;
+  }
+
+  .select-button {
+    font-size: 16px;
+    padding: 12px 0;
+  }
+}
